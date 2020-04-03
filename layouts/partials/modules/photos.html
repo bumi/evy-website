@@ -1,0 +1,9 @@
+<ul class="projects photos clearfix">
+  {{- range . -}}
+    <li class="photo project{{with .class}} {{.}}{{end}}">
+      {{ with .image }}
+        <img src="{{.url}}" alt="{{.alt}}" />
+      {{ end }}
+    </li>
+  {{- end -}}
+</ul>

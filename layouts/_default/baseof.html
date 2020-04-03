@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="{{block "page-class" . }}{{end}} no-js" lang="{{ .Site.LanguageCode | default "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ block "title" . }}{{ with .Title }}{{ . }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ .Description }}">
+    {{- if (eq hugo.Environment "production") | or (eq .Site.Params.env "production") -}}
+      <meta name="robots" content="index, follow">
+    {{- else -}}
+      <meta name="robots" content="noindex, nofollow">
+    {{- end -}}
+    <link rel="shortcut icon" href="{{`favicon.ico` | relURL}}">
+    {{- block "head-includes" . -}}
+      {{- partial "head-includes.html" . -}}
+    {{- end -}}
+  </head>
+  <body>
+    {{- block "header" . -}}{{- end -}}
+    {{- block "main" . -}}{{- end -}}
+    {{- block "footer" . -}}{{- end -}}
+    {{- block "scripts" . -}}
+      {{- partial "scripts.html" . -}}
+    {{- end -}}
+    {{- if (eq hugo.Environment "production") | or (eq .Site.Params.env "production") | and .Site.GoogleAnalytics -}}
+      {{- template "_internal/google_analytics_async.html" . -}}
+    {{- end -}}
+  </body>
+</html>

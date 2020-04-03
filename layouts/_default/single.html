@@ -1,0 +1,15 @@
+{{- define "main" -}}
+<div class="main-container">
+  {{- partial "navigation" . -}}
+  {{- partial "header" . -}}
+  <div class="container">
+    <div class="padder">
+      {{ $context := . }}
+      {{- range $index, $module := .Params.modules -}}
+        {{ $path := printf "modules/%s" .partial }}
+        {{- partial $path .params -}}
+      {{- end -}}
+    </div>
+  </div>
+</div>
+{{- end -}}

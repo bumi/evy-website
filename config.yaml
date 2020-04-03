@@ -1,0 +1,21 @@
+baseURL: https://example.com
+languageCode: de
+title: Evelyn Wunder
+disableKinds: [RSS, taxonomy, taxonomyTerm]
+googleAnalytics: 
+
+# Menu items
+menu:
+  main:
+  - name: Jetzt Anfragen!
+    url: /auf-die-maske/#anfragen
+  - name: Kontakt
+    weight: 2
+    url: /contact
+
+# Custom params
+params:
+  env: development
+  logoImage: img/logo.png
+  logoImageAlt: Evelyn Wunder
+  rootUrl: /auf-die-maske
