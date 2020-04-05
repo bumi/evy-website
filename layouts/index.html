@@ -1,11 +1,20 @@
 {{- define "main" -}}
 <div class="main-container">
-  {{- partial "navigation" . -}}
-  {{- partial "header" . -}}
+<div class="header">
   <div class="container">
     <div class="padder">
+      <div class="main-description center animated fadeIn">
+        <a href="{{ .Site.Params.rootUrl }}"><img src="{{.Site.Params.logoImage | relURL}}" alt="{{.Site.Params.logoImageAlt}}"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="padder">
+
       <script>
-        document.location = '/auf-die-maske';
+        setTimeout(function() { document.location = '/auf-die-maske'; }, 2000);
       </script>
     </div>
   </div>

@@ -321,6 +321,10 @@
       right: -100%; }
   }
 
+.center {
+  text-align: center;
+}
+
 .burger-wrap {
   float: right;
   height: 100%;
@@ -597,7 +601,7 @@
   position: absolute;
   top: 0;
   opacity: 0;
-  animation: display 18s infinite;
+  animation: display 24s infinite;
 }
 
 .images img:nth-child(2) {
@@ -615,13 +619,26 @@
 .images img:nth-child(6) {
   animation-delay: 15s;
 }
+.images img:nth-child(7) {
+  animation-delay: 18s;
+}
+.images img:nth-child(8) {
+  animation-delay: 21s;
+}
+
 .order h2 {
   font-size: 3.4em;
   font-weight: bold;
   line-height: 1.15;
   padding-top: 1.3em;
 }
-
+.order .success {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0 20px;
+  font-weight: bold;
+  color: green;
+}
 .field {
   margin-bottom: .75rem;
 }
@@ -644,7 +661,6 @@
     display: flex;
   }
   .field-body {
-    display: flex;
     flex-basis: 0;
     flex-grow: 3;
     flex-shrink: 1;

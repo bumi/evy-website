@@ -9,6 +9,8 @@ header:
   images:
     - /uploads/masken/11.jpg
     - /uploads/masken/12.jpg
+    - /uploads/masken/2.jpg
+    - /uploads/masken/6.jpg
     - /uploads/masken/3-h.jpg
     - /uploads/masken/5.jpg
     - /uploads/masken/produktion-1.jpg

@@ -11,7 +11,7 @@ menu:
     url: /auf-die-maske/#anfragen
   - name: Kontakt
     weight: 2
-    url: /contact
+    url: /kontakt
 
 # Custom params
 params:
