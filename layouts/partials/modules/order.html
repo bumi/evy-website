@@ -4,14 +4,14 @@
   <p class="disclaimer">
     Dies ist <strong>kein</strong> medizinisches Produkt (Atemschutzmaske, Schutzmaske, etc.). Warum es aber sinnvoll ist eine Maske zu tragen kannst du hier nachlesen.
   </p>
-  <form action="https://getform.io/f/58bfb0d6-fe44-48d1-9f56-64c246521fc1" method="post" id="order-form">
+  <form action="https://tinyforms.herokuapp.com/s/Am5kudiheMuPciuJcJ5iFwDR" method="post" id="order-form">
     <fieldset>
       <div class="field">
         <div class="field-label">
           <label class="label">Name</label>
         </div>
         <div class="field-body">
-          <input type="text" name="name" required>
+          <input type="text" name="Name" required>
         </div>
       </div>
 
@@ -20,7 +20,7 @@
           <label class="label">E-Mail</label>
         </div>
         <div class="field-body">
-          <input type="email" name="email" required>
+          <input type="email" name="Email" required>
         </div>
       </div>
 
@@ -29,7 +29,7 @@
           <label class="label">Straße und Hausnummer</label>
         </div>
         <div class="field-body">
-          <input type="text" name="street" required>
+          <input type="text" name="Straße" required>
         </div>
       </div>
 
@@ -38,7 +38,7 @@
           <label class="label">Postleitzahl</label>
         </div>
         <div class="field-body">
-          <input type="text" name="zip" required>
+          <input type="text" name="Postleitzahl" required>
         </div>
       </div>
 
@@ -47,7 +47,7 @@
           <label class="label">Stadt</label>
         </div>
         <div class="field-body">
-          <input type="text" name="city" required>
+          <input type="text" name="Stadt" required>
         </div>
       </div>
     </fieldset>
@@ -57,7 +57,7 @@
           <label class="label">Anzahl</label>
         </div>
         <div class="field-body">
-          <input type="text" name="amount" required>
+          <input type="text" name="Anzahl" required>
         </div>
       </div>
 
@@ -66,7 +66,7 @@
           <label class="label">Nachricht</label>
         </div>
         <div class="field-body">
-          <input type="text" name="message" placeholder="optional">
+          <input type="text" name="Nachricht" placeholder="optional">
         </div>
       </div>
     </fieldset>
@@ -76,6 +76,7 @@
         <div class="field-label">
         </div>
         <div class="field-body">
+          <input type="hidden" name="Datum" value="tinyforms_now">
           <button type="submit" class="is-fullwidth">Abschicken</button>
           <br>
           <p>

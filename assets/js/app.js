@@ -5,7 +5,6 @@ var App = {
   init: function() {
     this.initBurgerHandler();
     var orderForm = document.getElementById('order-form');
-    console.log(orderForm);
     if (orderForm) {
       orderForm.addEventListener('submit', App.submitOrder);
     }
