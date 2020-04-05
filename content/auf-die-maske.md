@@ -21,14 +21,14 @@ modules:
     params:
       - name: 100% Baumwolle - waschbar bei 90 Grad
         description:
-          Die Masken bestehen aus 100% Baumwollstoff und können somit bei 90 Grad in der Maschine gewaschen oder mindestes 5 Minuten in einem Topf ausgekocht werde. 
+          Die Masken bestehen aus 100% Baumwollstoff und können somit bei 90 Grad in der Maschine gewaschen oder mindestens 5 Minuten in einem Topf ausgekocht werden. 
       - name: Austauschbares Filtermaterial
         description:
-          In die Lasche im Inneren der Maske kann nach Bedarf zusätzliches Filtermaterial (z.B. Lagen elektrostatischen Materials, Elekret, o.ä.) eingeschoben werden.
+          In die Lasche im Inneren der Maske kann nach Bedarf zusätzliches Filtermaterial (z.B. Lagen elektrostatischen Materials, Elektret, o.ä.) eingeschoben werden.
       - name: Perfekte Passform
         description:
           An der oberen Kante ist ein Nasenbügel mitgefasst um die Maske optimal an die Gesichtsform anzupassen.
-          Die Passform kann durch den Knoten am Gummiband individuell reguliert weden.
+          Die Passform kann durch den Knoten am Gummiband individuell reguliert werden.
   - partial: order
   - partial: photos
     params:
