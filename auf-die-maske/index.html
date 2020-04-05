@@ -10,7 +10,7 @@
 
 
 
-<link rel="stylesheet" href="/css/app.min.5fe15e59e7b140de5cfdabc7c139622663ffdede4e1f245264e23d119d0fc4d1.css">
+<link rel="stylesheet" href="/css/app.min.7a87392a8cfd3426d25d8a8823d4dd9f8576aeabb86314c598db695214e27095.css">
 </head>
   <body><div class="main-container stickyNavigation">
 
@@ -37,23 +37,26 @@
     <div class="padder">
       <div class="main-description animated fadeIn columns">
         <div class="column"><h1 class="">Auf die <span class="text">Maske!</span></h1></div>
-        <div class="column images"><img src="/uploads/masken/11.jpg"><img src="/uploads/masken/12.jpg"><img src="/uploads/masken/2.jpg"><img src="/uploads/masken/6.jpg"><img src="/uploads/masken/3-h.jpg"><img src="/uploads/masken/5.jpg"><img src="/uploads/masken/produktion-1.jpg"><img src="/uploads/masken/produktion-2.jpg"></div>
+        <div class="column images"><img src="/uploads/masken/11.jpg"><img src="/uploads/masken/12.jpg"><img src="/uploads/masken/2.jpg"><img src="/uploads/masken/6.jpg"><img src="/uploads/masken/5.jpg"><img src="/uploads/masken/3-h.jpg"><img src="/uploads/masken/produktion-1.jpg"><img src="/uploads/masken/produktion-2.jpg"></div>
       </div>
     </div>
   </div>
 </div><div class="container">
     <div class="padder">
-      <div class="categories clearfix bottom-space"><div class="category"><div class="name">100% Baumwolle - waschbar bei 90 Grad</div><div class="description">Die Masken bestehen aus 100% Baumwollstoff und können somit bei 90 Grad in der Maschine gewaschen oder mindestes 5 Minuten in einem Topf ausgekocht werde.</div></div><div class="category"><div class="name">Austauschbares Filtermaterial</div><div class="description">In die Lasche im Inneren der Maske kann nach Bedarf zusätzliches Filtermaterial (z.B. Lagen elektrostatischen Materials, Elekret, o.ä.) eingeschoben werden.</div></div><div class="category"><div class="name">Perfekte Passform</div><div class="description">An der oberen Kante ist ein Nasenbügel mitgefasst um die Maske optimal an die Gesichtsform anzupassen. Die Passform kann durch den Knoten am Gummiband individuell reguliert weden.</div></div></div><hr>
+      <div class="categories clearfix bottom-space"><div class="category"><div class="name">100% Baumwolle - waschbar bei 90 Grad</div><div class="description">Die Masken bestehen aus 100% Baumwollstoff und können somit bei 90 Grad in der Maschine gewaschen oder mindestens 5 Minuten in einem Topf ausgekocht werden.</div></div><div class="category"><div class="name">Austauschbares Filtermaterial</div><div class="description">In die Lasche im Inneren der Maske kann nach Bedarf zusätzliches Filtermaterial (z.B. Lagen elektrostatischen Materials, Elektret, o.ä.) eingeschoben werden.</div></div><div class="category"><div class="name">Perfekte Passform</div><div class="description">An der oberen Kante ist ein Nasenbügel mitgefasst um die Maske optimal an die Gesichtsform anzupassen. Die Passform kann durch den Knoten am Gummiband individuell reguliert werden.</div></div></div><hr>
 <div class="order clearfix bottom-space" id="anfragen">
   <h2>Jetzt anfragen</h2>
-  <form action="https://getform.io/f/58bfb0d6-fe44-48d1-9f56-64c246521fc1" method="post" id="order-form">
+  <p class="disclaimer">
+    Dies ist <strong>kein</strong> medizinisches Produkt (Atemschutzmaske, Schutzmaske, etc.). Warum es aber sinnvoll ist eine Maske zu tragen kannst du hier nachlesen.
+  </p>
+  <form action="https://tinyforms.herokuapp.com/s/Am5kudiheMuPciuJcJ5iFwDR" method="post" id="order-form">
     <fieldset>
       <div class="field">
         <div class="field-label">
           <label class="label">Name</label>
         </div>
         <div class="field-body">
-          <input type="text" name="name" required>
+          <input type="text" name="Name" required>
         </div>
       </div>
 
@@ -62,7 +65,7 @@
           <label class="label">E-Mail</label>
         </div>
         <div class="field-body">
-          <input type="email" name="email" required>
+          <input type="email" name="Email" required>
         </div>
       </div>
 
@@ -71,7 +74,7 @@
           <label class="label">Straße und Hausnummer</label>
         </div>
         <div class="field-body">
-          <input type="text" name="street" required>
+          <input type="text" name="Straße" required>
         </div>
       </div>
 
@@ -80,7 +83,7 @@
           <label class="label">Postleitzahl</label>
         </div>
         <div class="field-body">
-          <input type="text" name="zip" required>
+          <input type="text" name="Postleitzahl" required>
         </div>
       </div>
 
@@ -89,7 +92,7 @@
           <label class="label">Stadt</label>
         </div>
         <div class="field-body">
-          <input type="text" name="city" required>
+          <input type="text" name="Stadt" required>
         </div>
       </div>
     </fieldset>
@@ -99,7 +102,7 @@
           <label class="label">Anzahl</label>
         </div>
         <div class="field-body">
-          <input type="text" name="amount" required>
+          <input type="text" name="Anzahl" required>
         </div>
       </div>
 
@@ -108,7 +111,7 @@
           <label class="label">Nachricht</label>
         </div>
         <div class="field-body">
-          <input type="text" name="message" placeholder="optional">
+          <input type="text" name="Nachricht" placeholder="optional">
         </div>
       </div>
     </fieldset>
@@ -118,10 +121,11 @@
         <div class="field-label">
         </div>
         <div class="field-body">
+          <input type="hidden" name="Datum" value="tinyforms_now">
           <button type="submit" class="is-fullwidth">Abschicken</button>
           <br>
           <p>
-            Die Daten werden ertraulich behandelt und ausschließlich zur Bearbeitung von deiner Anfrage verwendet.
+            Die Daten werden vertraulich behandelt und ausschließlich zur Bearbeitung von deiner Anfrage verwendet.
           </p>
 
         </div>
@@ -159,6 +163,6 @@
 
 
 
-<script src="/js/app.min.3d0a68794f219cd9b0c662a6628466c3f6ac3e9860ef9a8bec953318d1fba134.js"></script>
+<script src="/js/app.min.84bd674a9948dcdc49df3df3003dead1830fa811703dbd5c937a001509048122.js"></script>
 </body>
 </html>
