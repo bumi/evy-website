@@ -11,10 +11,12 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 1rem;
     font: inherit;
     vertical-align: baseline; }
-
+p {
+  padding-bottom: 0.8rem;
+}
   body {
     line-height: 1; }
 
@@ -142,7 +144,7 @@
       height: auto; }
 
   .categories .category {
-    margin-top: 3em; }
+    margin-top: 1.5em; }
 
   .categories .category.line {
     margin: 0; }
@@ -225,7 +227,7 @@
       padding-top: 1.923em;
       padding-bottom: 1.923em; }
     .categories .category {
-      margin-top: 5em; }
+      margin-top: 3em; }
     .categories .name {
       margin-bottom: 0.625em; } }
 
@@ -303,7 +305,7 @@
     .main-description h1 {
       padding-bottom: 3.907em; }
     .categories .category {
-      margin-top: 7.5em; }
+      margin-top: 3.5em; }
     .categories .name {
       width: 42.47787%; }
     .categories .description {
@@ -627,10 +629,12 @@
 }
 
 .order h2 {
-  font-size: 3.4em;
+  font-size: 2.4em;
   font-weight: bold;
   line-height: 1.15;
-  padding-top: 1.3em;
+}
+.order {
+  font-size: 1rem;
 }
 .order .success {
   font-size: 2rem;
@@ -681,8 +685,7 @@ input {
   background-color: #fff;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
-  max-width: 100%;
-  width: 100%;
+  width: 96%;
   color: inherit;
   justify-content: flex-start;
   line-height: 1.5;
