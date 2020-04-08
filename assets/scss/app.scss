@@ -643,6 +643,51 @@ p {
   font-weight: bold;
   color: green;
 }
+.order-samples {
+  text-align: center;
+}
+.order-samples .sample {
+  display: block;
+  float:left;
+  width: 8.1%;
+}
+.order-samples img {
+  width: 100%;
+  padding:0;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.zoomD {
+  width: 600px;
+  height: auto;
+  cursor: pointer;
+}
+
+#lightbox-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+#lightbox-back.show {
+  visibility: visible;
+  opacity: 1;
+}
+#lightbox-content {
+  text-align: center;
+}
+#lightbox-content img {
+  height:75%;
+  cursor: pointer;
+}
+
 .field {
   margin-bottom: .75rem;
 }
@@ -681,7 +726,7 @@ fieldset {
   border: none;
 }
 
-input {
+input:not([type=checkbox]) {
   background-color: #fff;
   border: 1px solid #dbdbdb;
   border-radius: 4px;

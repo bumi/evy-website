@@ -26,5 +26,8 @@
     {{- if (eq hugo.Environment "production") | or (eq .Site.Params.env "production") | and .Site.GoogleAnalytics -}}
       {{- template "_internal/google_analytics_async.html" . -}}
     {{- end -}}
+    <div id="lightbox-back">
+      <div id="lightbox-content"></div>
+    </div>
   </body>
 </html>
