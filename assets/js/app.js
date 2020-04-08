@@ -10,7 +10,6 @@ var App = {
 
     var images = document.querySelectorAll('.order-samples img');
     images.forEach(function(img) {
-      console.log(img);
       img.addEventListener('click', App.zoomImage);
     });
     document.getElementById("lightbox-back").addEventListener("click", function(){
@@ -27,10 +26,7 @@ var App = {
   },
 
   zoomImage: function(e) {
-    console.log(e);
     e.preventDefault();
-    // Create evil image clone
-    console.log(this);
 
     var img = document.createElement('img');
     img.src = this.dataset.target;
