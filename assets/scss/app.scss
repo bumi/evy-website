@@ -682,9 +682,11 @@ p {
 }
 #lightbox-content {
   text-align: center;
+  padding: 10vh;
 }
 #lightbox-content img {
-  height:75%;
+  max-height: 75vh;
+  max-width: 75vw;
   cursor: pointer;
 }
 
