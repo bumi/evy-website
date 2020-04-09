@@ -9,9 +9,6 @@ menu:
   main:
   - name: Jetzt Anfragen!
     url: /auf-die-maske/#anfragen
-  - name: Kontakt
-    weight: 2
-    url: /kontakt
 
 # Custom params
 params:
