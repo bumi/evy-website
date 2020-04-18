@@ -5,16 +5,17 @@ draft: false
 description: 
 
 header:
-  description: Auf die <span class="text">Maske!</span>
+  description: Auf die Maske! fertig! LOS!
   images:
     - /uploads/masken/11.jpg
     - /uploads/masken/12.jpg
     - /uploads/masken/2.jpg
     - /uploads/masken/6.jpg
     - /uploads/masken/5.jpg
-    - /uploads/masken/3-h.jpg
-    - /uploads/masken/produktion-1.jpg
-    - /uploads/masken/produktion-2.jpg
+    - /uploads/masken/13.jpg
+    - /uploads/masken/17.jpg
+    - /uploads/masken/12.jpg
+    - /uploads/masken/16.jpg
 
 modules:
   - partial: text-groups
@@ -37,7 +38,7 @@ modules:
           url: /uploads/masken/11.jpg
           alt: 
       -
-        class: short-col
+        class: short-col margin-right
         image:
           url: /uploads/masken/3.jpg
           alt: 
@@ -48,7 +49,7 @@ modules:
           url: /uploads/masken/2.jpg
           alt: 
       -
-        class: wide-col
+        class: wide-col margin-right
         image:
           url: /uploads/masken/5.jpg
           alt: 
@@ -58,7 +59,68 @@ modules:
           url: /uploads/masken/10.jpg
           alt: 
       -
+        class: short-col margin-right
         image:
-          url: /uploads/masken/1.jpg
+          url: /uploads/masken/9.jpg
+          alt: 
+      -
+        class: wide-col
+        image:
+          url: /uploads/masken/13.jpg
+          alt: 
+      -
+        class: short-col margin-right
+        image:
+          url: /uploads/masken/produktion-1.jpg
+          alt: 
+      -
+        class: short-col margin-right
+        image:
+          url: /uploads/masken/produktion-2.jpg
+          alt: 
+      -
+        class: short-col
+        image:
+          url: /uploads/masken/produktion-3.jpg
+          alt: 
+      -
+        class: half-col margin-right
+        image:
+          url: /uploads/masken/15.jpg
+          alt: 
+      -
+        class: half-col
+        image:
+          url: /uploads/masken/14.jpg
+          alt: 
+      -
+        class: short-col margin-right
+        image:
+          url: /uploads/masken/16.jpg
+          alt: 
+      -
+        class: short-col margin-right
+        image:
+          url: /uploads/masken/18.jpg
+          alt: 
+      -
+        class: short-col
+        image:
+          url: /uploads/masken/19.jpg
+          alt: 
+      -
+        class: short-col margin-right
+        image:
+          url: /uploads/masken/20.jpg
+          alt: 
+      -
+        class: short-col margin-right
+        image:
+          url: /uploads/masken/21.jpg
+          alt: 
+      -
+        class: short-col
+        image:
+          url: /uploads/masken/22.jpg
           alt: 
 ---

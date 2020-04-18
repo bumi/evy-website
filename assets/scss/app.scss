@@ -531,13 +531,18 @@ p {
       max-height: 400px;
     }
 
+    & .half-col {
+      width: 49%;
+      max-height: 400px;
+    }
+
     & .wide-col {
       width: 66.01769%;
       max-height: 400px;
     }
 
-    & .photo:nth-child(2n) {
-      margin-right: 1.7699%;
+    & .margin-right {
+      margin-right: 1.5%;
     }
   }
 }
