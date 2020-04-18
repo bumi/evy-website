@@ -2,7 +2,7 @@
 title: Auf die Maske
 date: 2020-04-03T18:28:28+02:00
 draft: false
-description: 
+description: Masken aus 100% Baumwollstoff - waschbar und auskochbar - mit Lasche für zusätzliches Filtermaterial
 
 header:
   description: Auf die Maske! fertig! LOS!

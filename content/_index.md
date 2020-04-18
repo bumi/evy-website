@@ -1,5 +1,5 @@
 ---
-title: Home page
+title: 
 date: 2020-04-03T18:28:28+02:00
 draft: false
 description: 

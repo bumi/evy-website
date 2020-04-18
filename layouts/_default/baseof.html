@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ block "title" . }}{{ with .Title }}{{ . }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ .Site.Title }} - {{ with .Title }}{{ . }} {{ end }}{{ end }}</title>
     <meta name="description" content="{{ .Description }}">
     {{- if (eq hugo.Environment "production") | or (eq .Site.Params.env "production") -}}
       <meta name="robots" content="index, follow">
@@ -15,6 +15,13 @@
     {{- block "head-includes" . -}}
       {{- partial "head-includes.html" . -}}
     {{- end -}}
+
+    <meta property="og:title" content="{{ .Site.Title }} - {{ .Title }}" />
+    <meta property="og:description" content="{{ .Description }}" />
+    <meta property="og:image" content="/uploads/masken/11.jpg" />
+    <meta property="og:image" content="/uploads/masken/19.jpg" />
+    <meta property="og:image" content="/uploads/masken/16.jpg" />
+
   </head>
   <body>
     {{- block "header" . -}}{{- end -}}
