@@ -78,62 +78,15 @@
           <label class="label">Stoff</label>
         </div>
         <div class="field-body">
-          <div class="sample">
-            <img src="/uploads/stoffe/thumbnails/blueten-schwarz-weiss.jpg" alt="Blüten schwarz/weiß" data-target="/uploads/stoffe/blueten-schwarz-weiss.jpg">
-            <br>
-            <input type="checkbox" name="Stoff[]" value="Blüten schwarz/weiß">
-          </div>
 
-          <div class="sample">
-            <img src="/uploads/stoffe/thumbnails/braun-gelb.jpg" alt="braun/gelb" data-target="/uploads/stoffe/braun-gelb.jpg">
-            <br>
-            <input type="checkbox" name="Stoff[]" value="braun/gelb">
-          </div>
-          <div class="sample">
-            <img src="/uploads/stoffe/thumbnails/dunkelblau.jpg" alt="dunkelblau" data-target="/uploads/stoffe/dunkelblau.jpg">
-            <br>
-            <input type="checkbox" name="Stoff[]" value="dunkelblau">
-          </div>
-          <div class="sample">
-            <img src="/uploads/stoffe/thumbnails/dunkelgruen.jpg" alt="dunkelgrün" data-target="/uploads/stoffe/dunkelgruen.jpg">
-            <br>
-            <input type="checkbox" name="Stoff[]" value="dunkelgruen">
-          </div>
-          <div class="sample">
-            <img src="/uploads/stoffe/thumbnails/lila.jpg" alt="lila" data-target="/uploads/stoffe/lila.jpg">
-            <br>
-            <input type="checkbox" name="Stoff[]" value="lila">
-          </div>
-          <div class="sample">
-            <img src="/uploads/stoffe/thumbnails/muster-rosa-rot.jpg" alt="Muster rosa/rot" data-target="/uploads/stoffe/muster-rosa-rot.jpg">
-            <br>
-            <input type="checkbox" name="Stoff[]" value="muster rosa/rot">
-          </div>
-          <div class="sample">
-            <img src="/uploads/stoffe/thumbnails/petrol.jpg" alt="petrol" data-target="/uploads/stoffe/petrol.jpg">
-            <br>
-            <input type="checkbox" name="Stoff[]" value="petrol">
-          </div>
-          <div class="sample">
-            <img src="/uploads/stoffe/thumbnails/pink.jpg" alt="pink" data-target="/uploads/stoffe/pink.jpg">
-            <br>
-            <input type="checkbox" name="Stoff[]" value="pink">
-          </div>
-          <div class="sample">
-            <img src="/uploads/stoffe/thumbnails/polka-dots-rosa-weiss.jpg" alt="polka dots rosa/weiß" data-target="/uploads/stoffe/polka-dots-rosa-weiss.jpg">
-            <br>
-            <input type="checkbox" name="Stoff[]" value="polka dots rosa/weiß">
-          </div>
-          <div class="sample">
-            <img src="/uploads/stoffe/thumbnails/polka-dots-rot-weiss.jpg" alt="polka dots rot/weiß" data-target="/uploads/stoffe/polka-dots-rot-weiss.jpg">
-            <br>
-            <input type="checkbox" name="Stoff[]" value="polka dots rot/weiß">
-          </div>
-          <div class="sample">
-            <img src="/uploads/stoffe/thumbnails/vichy-karo-weiss-gruen.jpg" alt="Vichy Karo weiß/grün" data-target="/uploads/stoffe/vichy-karo-weiss-gruen.jpg">
-            <br>
-            <input type="checkbox" name="Stoff[]" value="vichy-karo weiß/grün">
-          </div>
+          {{- range . -}}
+              <div class="sample">
+                <img src="/uploads/stoffe/thumbnails/{{.image}}" alt="{{.name}}" data-target="/uploads/stoffe/{{.image}}">
+                <br>
+                <input type="checkbox" name="Stoff[]" value="{{.name}}">
+              </div>
+          {{- end -}}
+
         </div>
       </div>
     </fieldset>
