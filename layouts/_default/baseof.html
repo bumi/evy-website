@@ -17,10 +17,14 @@
     {{- end -}}
 
     <meta property="og:title" content="{{ .Site.Title }} - {{ .Title }}" />
-    <meta property="og:description" content="{{ .Description }}" />
-    <meta property="og:image" content="{{ print "/uploads/masken/11.jpg" | absURL }}" />
-    <meta property="og:image" content="{{ print "/uploads/masken/19.jpg" | absURL }}"/>
-    <meta property="og:image" content="{{ print "/uploads/masken/16.jpg" | absURL}}"/>
+    {{ if .Description }}
+      <meta property="og:description" content="{{ .Description }}" />
+    {{ end }}
+    {{- if .Params.og_images -}}
+      {{ range .Params.og_images }}
+        <meta property="og:image" content="{{ . | absURL }}" />
+      {{ end }}
+    {{- end -}}
 
   </head>
   <body>
@@ -29,9 +33,6 @@
     {{- block "footer" . -}}{{- end -}}
     {{- block "scripts" . -}}
       {{- partial "scripts.html" . -}}
-    {{- end -}}
-    {{- if (eq hugo.Environment "production") | or (eq .Site.Params.env "production") | and .Site.GoogleAnalytics -}}
-      {{- template "_internal/google_analytics_async.html" . -}}
     {{- end -}}
     <div id="lightbox-back">
       <div id="lightbox-content"></div>
