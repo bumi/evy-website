@@ -32,41 +32,6 @@ modules:
           Die Passform kann durch den Knoten am Gummiband individuell reguliert werden.
 
   - partial: order
-    params:
-      -
-        name: Blüten schwarz/weiß
-        image: blueten-schwarz-weiss.jpg
-      -
-        name: braun/gelb
-        image: braun-gelb.jpg
-      -
-        name: dunkelblau
-        image: dunkelblau.jpg
-      -
-        name: dunkelgrün
-        image: dunkelgruen.jpg
-      -
-        name: lila
-        image: lila.jpg
-      -
-        name: "Muster: rosa/rot"
-        image: muster-rosa-rot.jpg
-      -
-        name: petrol
-        image: petrol.jpg
-      -
-        name: pink
-        image: pink.jpg
-      -
-        name: "polka dots: rosa/weiß"
-        image: polka-dots-rosa-weiss.jpg
-      -
-        name: "polka dots: rot/weiß"
-        image: polka-dots-rot-weiss.jpg
-      -
-        name: "vichy karo weiß/grün"
-        image: vichy-karo-weiss-gruen.jpg
-
 
   - partial: photos
     params:

@@ -18,9 +18,9 @@
 
     <meta property="og:title" content="{{ .Site.Title }} - {{ .Title }}" />
     <meta property="og:description" content="{{ .Description }}" />
-    <meta property="og:image" content="/uploads/masken/11.jpg" />
-    <meta property="og:image" content="/uploads/masken/19.jpg" />
-    <meta property="og:image" content="/uploads/masken/16.jpg" />
+    <meta property="og:image" content="{{ print "/uploads/masken/11.jpg" | absURL }}" />
+    <meta property="og:image" content="{{ print "/uploads/masken/19.jpg" | absURL }}"/>
+    <meta property="og:image" content="{{ print "/uploads/masken/16.jpg" | absURL}}"/>
 
   </head>
   <body>

@@ -79,13 +79,16 @@
         </div>
         <div class="field-body">
 
-          {{- range . -}}
-              <div class="sample">
-                <img src="/uploads/stoffe/thumbnails/{{.image}}" alt="{{.name}}" data-target="/uploads/stoffe/{{.image}}">
-                <br>
-                <input type="checkbox" name="Stoff[]" value="{{.name}}">
-              </div>
-          {{- end -}}
+          {{ range readDir "/content/uploads/products" }}
+            {{ $productName := replace .Name ".jpg" "" | humanize }}
+            {{ $thumbnailURL := print  "/uploads/products-thumbnails/" .Name | absURL }}
+            {{ $fullURL := print  "/uploads/products/" .Name | absURL }}
+            <div class="sample">
+              <img src="{{$thumbnailURL}}" alt="{{$productName}}" data-target="{{$fullURL}}">
+              <br>
+              <input type="checkbox" name="Stoff[]" value="{{$productName}}">
+            </div>
+          {{ end }}
 
         </div>
       </div>

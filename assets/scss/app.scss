@@ -660,7 +660,7 @@ p {
   width: 100%;
   padding:0;
   margin: 0px;
-  cursor: pointer;
+  cursor: zoom-in;
 }
 
 .zoomD {
@@ -692,7 +692,7 @@ p {
 #lightbox-content img {
   max-height: 75vh;
   max-width: 75vw;
-  cursor: pointer;
+  cursor: zoom-out;
 }
 
 .field {
