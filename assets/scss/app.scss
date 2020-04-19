@@ -608,7 +608,7 @@ p {
   position: absolute;
   top: 0;
   opacity: 0;
-  animation: display 24s infinite;
+  animation: display 27s infinite;
 }
 
 .images img:nth-child(2) {
@@ -632,6 +632,10 @@ p {
 .images img:nth-child(8) {
   animation-delay: 21s;
 }
+.images img:nth-child(9) {
+  animation-delay: 24s;
+}
+
 
 .order h2 {
   font-size: 2.4em;
