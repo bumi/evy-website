@@ -2,7 +2,12 @@
 <div class="order clearfix bottom-space" id="anfragen">
   <h2>Jetzt anfragen</h2>
   <p class="disclaimer">
-    Dies ist <strong>kein</strong> medizinisches Produkt (keine Atemschutzmaske, Schutzmaske, etc. im medizinischen Sinne).
+    Ich nähe <strong>wiederverwendbare Mund- & Nasenmasken</strong>, die ich gegen eine Spende zum Selbstkostenpreis (<strong>mind. 10€</strong> + Versand) abgebe.<br>
+    Einfach anfragen und ich schicke dir deine Wunschmaske umgehend zu. Falls du Fragen hast, einfach unten mit angeben.
+  </p>
+  <p>
+    Mit deiner Bestellung unterstützt du mich zusätzlich auch Masken für Altenheime und andere Einrichtungen, die dringend Masken benötigen, zu nähen.<br>
+    Dies ist kein medizinisches Produkt (keine Atemschutzmaske, Schutzmaske, etc. im medizinischen Sinne).
   </p>
   <form action="https://tinyforms.herokuapp.com/s/LonLFiQ24o2XYBEqRgXX1X44" method="post" id="order-form">
     <fieldset>
@@ -57,16 +62,16 @@
           <label class="label">Anzahl</label>
         </div>
         <div class="field-body">
-          <input type="text" name="Anzahl" required>
+          <input type="number" name="Anzahl" min="1" required>
         </div>
       </div>
 
       <div class="field">
         <div class="field-label">
-          <label class="label">Nachricht</label>
+          <label class="label">Nachricht oder Fragen</label>
         </div>
         <div class="field-body">
-          <input type="text" name="Nachricht" placeholder="optional">
+          <input type="text" name="Nachricht">
         </div>
       </div>
     </fieldset>
