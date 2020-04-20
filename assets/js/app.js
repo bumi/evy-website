@@ -74,7 +74,7 @@ var App = {
   }
 };
 
-window.addEventListener("load", function(){
+window.addEventListener("DOMContentLoaded", function(){
   App.init();
 });
 
