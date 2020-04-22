@@ -35,8 +35,6 @@ modules:
           Die Passform kann durch den Knoten am Gummiband individuell reguliert werden.
           <br>Hier findest du <a href="/uploads/tragehinweise.pdf">detaillierte Tragehinweise</a>.
 
-  - partial: order
-
   - partial: photos
     params:
       -

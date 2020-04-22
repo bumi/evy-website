@@ -6,13 +6,11 @@ googleAnalytics:
 
 # Menu items
 menu:
-  main:
-  - name: Jetzt Anfragen!
-    url: /auf-die-maske/#anfragen
+  main: [{}]
 
 # Custom params
 params:
   env: development
   logoImage: img/logo.png
   logoImageAlt: Evelyn Wunder
-  rootUrl: /auf-die-maske
+  rootUrl: /
